@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <div>
-      <h1>REACT</h1>
+      <h1>APP PARA PELICULAS</h1>
     </div>
   )
 }
