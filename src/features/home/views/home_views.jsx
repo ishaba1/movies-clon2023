@@ -11,6 +11,8 @@ import useSWR from "swr";
 
 import AppModal from "../../../core/components/app_modal/app_modal"
 import { useModal } from "../../../core/components/app_modal/hook/use_modal"
+import NavBarMovie from "../../../componentes/navbar/NavBarMovie";
+import FooterMovie from "../../../componentes/footerMovie/FooterMovie";
 
 const HomeView = () => {
     const { isOpen, closeModal, openModal } = useModal();
@@ -30,6 +32,11 @@ const HomeView = () => {
     return (
         <div>
             <div>
+                <NavBarMovie/>
+            </div>
+
+
+            <div>
                 <AppCarouselSection title={"Popular Movies"} data={popularMovies} />
             </div>
 
@@ -48,6 +55,11 @@ const HomeView = () => {
                     <button onClick={closeModal}>Cerrar</button>
                 </div>
             </AppModal>
+            
+            <div>
+                <FooterMovie/>
+            </div>
+
         </div>
     );
 };
